@@ -6,7 +6,6 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -15,8 +14,10 @@ datasource db {
 }
 
 model Note {
-  id        Int @id @default(autoincrement())
-  note      String @db.VarChar(5000)
+  id    Int    @id @default(autoincrement())
+  title String @db.VarChar(100)
+  note  String @db.VarChar(5000)
 
   @@map("notes")
 }
+
