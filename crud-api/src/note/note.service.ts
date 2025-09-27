@@ -4,12 +4,12 @@ import { PrismaService } from 'src/database/prisma.service';
 
 @Injectable()
 export class NoteService {
-    constructor (private prisma: PrismaService) ()
+    constructor (private prisma: PrismaService) {}
 
     async create(data: NoteDto) {
         const note = await this.prisma.note.create({
             data
-        });
+        })
 
         return note;
     }
