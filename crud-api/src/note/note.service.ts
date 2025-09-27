@@ -13,4 +13,37 @@ export class NoteService {
 
         return note;
     }
+
+    async findAll() {
+        return await this.prisma.note.findMany();
+    }
+
+    async update(id: number, data: NoteDto) {
+        await this.prisma.note.findUnique({
+            where: {
+                id,
+            }
+        });
+
+        return await this.prisma.note.update({
+            data,
+            where: {
+                id,
+            }
+        })
+    }
+
+    async delete(id: number) {
+        await this.prisma.note.findUnique({
+            where: {
+                id,
+            }
+        });
+
+        return await this.prisma.note.delete({
+            where: {
+                id,
+            }
+        })
+    }
 }
