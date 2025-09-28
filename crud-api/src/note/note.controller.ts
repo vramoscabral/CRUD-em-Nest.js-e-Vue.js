@@ -17,12 +17,13 @@ export class NoteController {
     }
 
     @Put(":id")
-    async update(@Param("id") id: number, data: NoteDto) {
+    async update(@Param("id") id: string, @Body() data: NoteDto) {
         return this.noteService.update(Number(id), data);
     }
 
+
     @Delete(":id")
-    async delete(@Param("id") id: number) {
+    async delete(@Param("id") id: string) {
         return this.noteService.delete(Number(id));
     }
 }

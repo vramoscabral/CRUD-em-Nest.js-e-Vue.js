@@ -5,6 +5,22 @@ export declare class NoteService {
     constructor(prisma: PrismaService);
     create(data: NoteDto): Promise<{
         note: string;
+        title: string;
+        id: number;
+    }>;
+    findAll(): Promise<{
+        note: string;
+        title: string;
+        id: number;
+    }[]>;
+    update(id: number, data: NoteDto): Promise<{
+        note: string;
+        title: string;
+        id: number;
+    }>;
+    delete(id: number): Promise<{
+        note: string;
+        title: string;
         id: number;
     }>;
 }

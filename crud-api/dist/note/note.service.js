@@ -23,6 +23,34 @@ let NoteService = class NoteService {
         });
         return note;
     }
+    async findAll() {
+        return await this.prisma.note.findMany();
+    }
+    async update(id, data) {
+        await this.prisma.note.findUnique({
+            where: {
+                id,
+            }
+        });
+        return await this.prisma.note.update({
+            data,
+            where: {
+                id,
+            }
+        });
+    }
+    async delete(id) {
+        await this.prisma.note.findUnique({
+            where: {
+                id,
+            }
+        });
+        return await this.prisma.note.delete({
+            where: {
+                id,
+            }
+        });
+    }
 };
 exports.NoteService = NoteService;
 exports.NoteService = NoteService = __decorate([

@@ -5,6 +5,22 @@ export declare class NoteController {
     constructor(noteService: NoteService);
     create(data: NoteDto): Promise<{
         note: string;
+        title: string;
+        id: number;
+    }>;
+    findAll(): Promise<{
+        note: string;
+        title: string;
+        id: number;
+    }[]>;
+    update(id: string, data: NoteDto): Promise<{
+        note: string;
+        title: string;
+        id: number;
+    }>;
+    delete(id: string): Promise<{
+        note: string;
+        title: string;
         id: number;
     }>;
 }
