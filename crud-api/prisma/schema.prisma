@@ -15,8 +15,8 @@ datasource db {
 
 model Note {
   id    Int    @id @default(autoincrement())
-  title String @db.VarChar(100)
-  note  String @db.VarChar(5000)
+  title String @db.VarChar(40)
+  note  String @db.VarChar(500)
 
   @@map("notes")
 }
