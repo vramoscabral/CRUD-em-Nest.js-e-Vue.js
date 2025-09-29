@@ -1,5 +1,7 @@
 # Projeto CRUD com NestJS e Vue.js
 
+![Tela Principal](main_screen.png)
+
 Este projeto é uma aplicação full stack CRUD com backend em NestJS, frontend em Vue.js, utilizando Prisma ORM para comunicação com o banco de dados MySQL e Axios para requisições HTTP.
 
 # Tecnologias
