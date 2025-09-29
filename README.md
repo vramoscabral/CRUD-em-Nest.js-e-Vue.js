@@ -51,6 +51,8 @@ O framework NestJS foi utilizado no backend desse projeto, e está configurado n
 4. **Crie e configure um arquivo .env com suas credenciais do seu banco de dados:**
     ```bash
     DATABASE_URL="mysql://root:senha@localhost:3306/nome_do_banco"
+    altere root e senha para seu user e senha do mysql
+    nome do banco ex: crud-api
     ```
     
 5. **Gere o client do Prisma:**
@@ -63,12 +65,12 @@ O framework NestJS foi utilizado no backend desse projeto, e está configurado n
     npx prisma migrate dev
     ```
 
-7. **Execute o seguinte comando para executar o backend:**
+7. **Execute o seguinte comando deixar executando o backend:**
     ```bash
     npm run start:dev
     ```
 
-8. **Acesse a pasta do crud-frontend e execute o comando:**
+8. **Abra um novo terminal e acesse a pasta do crud-frontend e execute o comando:**
     ```bash
     npm install
     ```
