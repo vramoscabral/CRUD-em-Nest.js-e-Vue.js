@@ -75,6 +75,7 @@ Este projeto é uma aplicação full stack CRUD com backend em NestJS, frontend 
 
 # 📌 Estrutura principal
 
+```
 CRUD-em-Nest.js-e-Vue.js/
 ├── crud-api/                 # Backend NestJS
 │   ├── src/
@@ -103,4 +104,5 @@ CRUD-em-Nest.js-e-Vue.js/
 │   │   └── main.ts
 │   └── package.json
 └── README.md
+```
  
