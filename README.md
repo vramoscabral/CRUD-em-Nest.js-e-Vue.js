@@ -1,13 +1,24 @@
-# Projeto CRUD com NestJS, Prisma, MySQL e Vue.js
+# Projeto CRUD com NestJS e Vue.js
 
-Este projeto é uma API CRUD construída com NestJS, utilizando Prisma ORM para comunicação com o banco de dados MySQL.
+Este projeto é uma aplicação full stack CRUD com backend em NestJS, frontend em Vue.js, utilizando Prisma ORM para comunicação com o banco de dados MySQL e Axios para requisições HTTP.
+
+# Tecnologias
+
+## Backend
+* NestJS - Framework Node.js
+* Prisma - ORM para banco de dados
+* MySQL - Banco de dados relacional
+
+## Frontend
+* Vue.js - Framework JavaScript progressivo
+* Axios - Cliente HTTP para APIs
 
 # Requisitos
 
 * Node.js (>= 18.x)
 * npm (ou yarn ou pnpm)
 * MySQL (>= 8.x) ou PostgreSQL, MariaDB, SQL Server, SQLite, e CockroachDB.
-* Git (opcional, somente se for clonado o repositório)
+* Git
 
 # Instalação
 
@@ -42,24 +53,53 @@ Este projeto é uma API CRUD construída com NestJS, utilizando Prisma ORM para 
     npx prisma migrate dev
     ```
 
-7. **Execute o seguinte comando:**
+7. **Execute o seguinte comando para executar o backend:**
     ```bash
     npm run start:dev
     ```
 
-8. **Abra o seu navegador e cole o seguinte link:**
+8. **Acesse a pasta do crud-frontend e execute o comando:**
     ```bash
-    localhost:3000
+    npm install
+    ```
+
+9. **Execute o comando para ligar o frontend:**
+    ```bash
+    npm run serve
+    ```
+
+8. **Abra o seu navegador e cole o link gerado no terminal:**
+    ```bash
+    Ex: localhost:5137
     ```
 
 📌 Estrutura principal
-src/
- ┣ database/
- ┃ ┣ prisma.module.ts
- ┃ ┗ prisma.service.ts
- ┣ note/
- ┃ ┣ dto/
- ┃ ┣ note.module.ts
- ┃ ┣ note.service.ts
- ┃ ┗ note.controller.ts
- ┗ app.module.ts
+CRUD-em-Nest.js-e-Vue.js/
+├── crud-api/                 # Backend NestJS
+│   ├── src/
+│   │   ├── database/
+│   │   │   ├── prisma.module.ts
+│   │   │   └── prisma.service.ts
+│   │   ├── note/
+│   │   │   ├── dto/
+│   │   │   ├── note.module.ts
+│   │   │   ├── note.service.ts
+│   │   │   └── note.controller.ts
+│   │   └── app.module.ts
+│   │   └── main.js
+│   ├── prisma/
+│   │   ├── schema.prisma
+│   │   └── migrations/
+│   └── package.json
+├── frontend/                 # Frontend Vue.js
+│   ├── src/
+│   │   ├── router/
+│   │   │   └── index.ts
+│   │   ├── services/
+│   │   │   └── noteService.ts
+│   │   ├── views/
+│   │   │   └── notesView.vue
+│   │   └── main.js
+│   └── package.json
+└── README.md
+ 
