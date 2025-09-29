@@ -77,7 +77,7 @@ O framework NestJS foi utilizado no backend desse projeto, e está configurado n
 
 9. **Execute o comando para ligar o frontend:**
     ```bash
-    npm run serve
+    npm run dev
     ```
 
 8. **Abra o seu navegador e cole o link gerado no terminal:**
