@@ -73,7 +73,8 @@ Este projeto é uma aplicação full stack CRUD com backend em NestJS, frontend 
     Ex: localhost:5137
     ```
 
-📌 Estrutura principal
+# 📌 Estrutura principal
+
 CRUD-em-Nest.js-e-Vue.js/
 ├── crud-api/                 # Backend NestJS
 │   ├── src/
@@ -85,8 +86,8 @@ CRUD-em-Nest.js-e-Vue.js/
 │   │   │   ├── note.module.ts
 │   │   │   ├── note.service.ts
 │   │   │   └── note.controller.ts
-│   │   └── app.module.ts
-│   │   └── main.js
+│   │   ├── app.module.ts
+│   │   └── main.ts
 │   ├── prisma/
 │   │   ├── schema.prisma
 │   │   └── migrations/
@@ -99,7 +100,7 @@ CRUD-em-Nest.js-e-Vue.js/
 │   │   │   └── noteService.ts
 │   │   ├── views/
 │   │   │   └── notesView.vue
-│   │   └── main.js
+│   │   └── main.ts
 │   └── package.json
 └── README.md
  
